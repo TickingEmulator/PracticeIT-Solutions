@@ -1,12 +1,12 @@
-public int median(int[] a) {
-  for (int i = 0; i < a.length; i++) {
-    for (int i2 = 0; i2 < a.length; i2++) {
-      if (a[i] < a[i2]) {
-        int c = a[i], b = a[i2];
-        a[i] = b;
-        a[i2] = c;
-      }
+public int minGap(int[] a) {
+  if (a.length <= 2) {
+    return 0;
+  }
+  int s = (a[1] - a[0]);
+  for (int i = 1; i < a.length - 1; i++) {
+    if ((a[i + 1] - a[i]) < s) {
+      s = (a[i + 1] - a[i]);
     }
   }
-  return (a[(int)(a.length / 2)]);
+  return (s);
 }
