@@ -1,5 +1,5 @@
 # PracticeIT-Solutions
-Washington University CS Problem Solutions
+Washington University CS Problem Solution
 
 BJP5 Chapter 7: Arrays
 
